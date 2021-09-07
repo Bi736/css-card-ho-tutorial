@@ -1,0 +1,296 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.head{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5px;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0,0,0,.6);
+    padding: 15px;
+}
+
+.head-text{
+flex-basis: 30%;
+}
+.head-text h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: gray;
+}
+.header-menu{
+flex-basis: 70%;
+}
+.header-menu ul{display: flex;
+justify-content: center;
+}
+.header-menu ul li{list-style: none;
+    margin: 0px 50px;
+}
+
+.header-menu ul li a{
+font-size: 16px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-weight: 600;
+color:white;
+background-color: rgb(152, 75, 224);
+border-radius: 10px;
+padding: 10px 30px;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+transition: .5s;
+}
+
+.header-menu ul li:hover{
+    transform: scale(1.05);
+}
+
+
+
+
+.header-menu ul li i{
+
+background-color: slateblue;
+padding: 10px 20px;
+border-radius: 10px;
+color: white;
+cursor: pointer;
+}
+
+
+/*-----------CONTENT---------------*/
+
+.content{
+margin-top: 80px;
+text-align: center;
+}
+.content h1{font-size: 40px;
+    color: gray;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.border{
+    height:4px;
+    width: 100px;
+    background-color: gray;
+display: block;
+margin: auto;
+margin-top: 30px;
+}
+
+
+.post{
+    color: green;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    text-align: center;
+}
+h2#sub-title {
+    margin-top: 80px;
+}
+#circle{
+    color:rgb(152, 75, 224);
+}
+
+
+
+/*---------------------------next-----------------------*/
+
+body{
+    background-color: rgba(0,0,0,.1);
+}
+.head{
+    background-color: rgb(232, 242, 247);
+}
+
+.why{
+    margin-top: 100px;
+    margin-left: 20px;
+
+    border: 1px solid black;
+    display: inline-block;
+    padding: 20px 40px;
+    border-radius: 10px;
+    background-color: white;
+    
+}
+
+.why ul{
+    margin-top: 40px;
+
+}
+.why ul li{
+    list-style: none;
+    text-align: left;
+    margin: 15px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+
+}
+
+.why ul li i{
+    color: slateblue;
+}
+
+.why h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: tomato;
+    font-weight: 600;
+}
+
+
+.information {
+    text-align: center;
+}
+
+
+/*-------------------solution----------------------*/
+
+.solution{
+    display: flex;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+.right{
+    display: flex;
+}
+.one{
+    margin: 0px 15px;
+}
+.middle{
+    margin: 40px 15px;
+}
+.middle h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+}
+
+#right{
+    font-size: 60px;
+    color: slateblue;
+    margin-top: 20px;
+
+
+    animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+    
+}
+
+@keyframes move{
+    0%{
+        margin-left: 0%;
+    }
+   
+    100%{
+        margin-left: 350px;
+    }
+}
+
+
+.left{
+
+}
+.left img{
+    border: 1px solid black;
+    padding: 40px 30px;
+    background-color: white;
+}
+
+
+/*----------------------note---------------*/
+
+.note{
+
+    margin: 0px 25px;
+    margin-top: 60px;
+    position: relative;
+    
+}
+.note h2{
+display: inline-block;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+padding: 8px 20px;
+background-color: slateblue;
+color: white;
+border-radius: 10px 0px 10px 0px;
+}
+.note p{
+margin-top: 20px;
+font-family: Verdana, Geneva, Tahoma, sans-serif;
+font-size: 14px;
+word-spacing: 10px;
+line-height: 30px;
+}
+.note h1{
+    margin-top: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#down{
+    position: absolute;
+    top: 140px;
+    left: 700px;
+    transform: rotate(90deg);
+    margin: 0px 30px;
+    color: slateblue;
+    font-size: 50px;
+
+
+    animation-name: down;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down {
+    0%{
+        margin-top: 0%;
+    }
+   
+    100%{
+        margin-top: 15px;
+    }
+}
+
+
+/*-----------------------last------------------------*/
+
+.last{
+    margin-top: 50px;
+    margin-left: 700px;
+}
+
+
+#again{
+    position: absolute;
+    top: 120px;
+    left: 750px;
+    transform: rotate(90deg);
+    margin: 0px 30px;
+    color: slateblue;
+    font-size: 50px;
+
+
+    animation-name: again;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes again {
+    0%{
+        margin-top: 0%;
+    }
+   
+    100%{
+        margin-top: 15px;
+    }
+}
